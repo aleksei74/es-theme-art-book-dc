@@ -91,9 +91,7 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="system-view-artwork" displayName="시스템 아트워크">
       <include name="default" displayName="기본" />
-      <include name="noir" displayName="Noir" />
       <include name="nintendont" displayName="Nintendon't" />
-      <include name="circuit" displayName="Circuit" />
       <include name="outline" displayName="아웃라인" />
       <include name="custom" displayName="커스텀" />
       <include name="custom-fullscreen" displayName="커스텀 (풀스크린)" />
