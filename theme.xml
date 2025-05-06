@@ -33,36 +33,11 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <variables>
-      <fontRegular>./_inc/fonts/NanumSquareNeo-bRg.ttf</fontRegular>
-      <fontBold>./_inc/fonts/NanumSquareNeo-cBd.ttf</fontBold>
-      <fontLight>./_inc/fonts/NanumSquareNeo-aLt.ttf</fontLight>
-      <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
       <spacerImage>./_inc/images/space.png</spacerImage>
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
       <distributionPath ifSubset="distribution:rocknix">~/roms/_userdata/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
       <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
-      <!-- 삭제대기 -->
-      <font_menutitle>0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:4-3" >0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:3-2" >0.038</font_menutitle>
-      <font_menutitle ifSubset="aspect-ratio:1-1" >0.038</font_menutitle>
-      <font_menufooter>0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:4-3" >0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:3-2" >0.025</font_menufooter>
-      <font_menufooter ifSubset="aspect-ratio:1-1" >0.025</font_menufooter>
-      <font_menutext>0.042</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:4-3" >0.042</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:3-2" >0.042</font_menutext>
-      <font_menutext ifSubset="aspect-ratio:1-1" >0.042</font_menutext>
-      <font_menutextsmall>0.040</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:4-3" >0.040</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:3-2" >0.040</font_menutextsmall>
-      <font_menutextsmall ifSubset="aspect-ratio:1-1" >0.040</font_menutextsmall>
-      <font_menugroup>0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:4-3" >0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:3-2" >0.038</font_menugroup>
-      <font_menugroup ifSubset="aspect-ratio:1-1" >0.038</font_menugroup>
    </variables>
 
    <!--
@@ -146,13 +121,13 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Game Video Delay
    ///
    -->
-   <subset name="gamelist-video-delay" displayName="Game Video Delay">
-      <include name="2-seconds" displayName="2 Seconds (Default)" />
-      <include name="instant" displayName="Instant" />
-      <include name="1-second" displayName="1 Second" />
-      <include name="3-seconds" displayName="3 Seconds" />
-      <include name="4-seconds" displayName="4 Seconds" />
-      <include name="5-seconds" displayName="5 Seconds" />
+   <subset name="gamelist-video-delay" displayName="비디오 딜레이">
+      <include name="2-seconds" displayName="2초 (기본)" />
+      <include name="instant" displayName="즉시" />
+      <include name="1-second" displayName="1초" />
+      <include name="3-seconds" displayName="3초" />
+      <include name="4-seconds" displayName="4초" />
+      <include name="5-seconds" displayName="5초" />
    </subset>
 
    <!--
@@ -160,9 +135,9 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Font
    ///
    -->
-   <subset name="fonts" displayName="Fonts">
-      <include name="default" displayName="Default" />
-      <include name="custom" displayName="Custom" />
+   <subset name="fonts" displayName="폰트">
+      <include name="default" displayName="기본" />
+      <include name="custom" displayName="커스텀" />
    </subset>
    <include>./fonts.xml</include>
    <include ifSubset="fonts:custom">${themeCustomizationsPath}fonts.xml</include>
@@ -173,10 +148,10 @@ https://github.com/anthonycaccese/art-book-next-es
    ///
    -->
    <subset name="font-size" displayName="폰트크기">
-      <include name="default" displayName="기본" />
-      <include name="large" displayName="크게" />
-      <include name="xlarge" displayName="더 크게" />
-      <include name="small" displayName="작게" />
+      <include name="large" displayName="기본" />
+      <include name="xlarge" displayName="크게" />
+      <include name="default" displayName="작게" />
+      <include name="small" displayName="더 작게" />
    </subset>
 
    <!--
@@ -211,9 +186,9 @@ https://github.com/anthonycaccese/art-book-next-es
    Subset: Network Icon
    ///
    -->
-   <subset name="network-icon" displayName="Network Icon">
-      <include name="default" displayName="Default" />
-      <include name="ethernet" displayName="Ethernet" />
+   <subset name="network-icon" displayName="네트워크 아이콘">
+      <include name="default" displayName="기본" />
+      <include name="ethernet" displayName="이더넷" />
    </subset>
 
    <!--
